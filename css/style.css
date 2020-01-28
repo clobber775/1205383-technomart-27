@@ -1,0 +1,11 @@
+body{
+  background-color:grey;
+}
+.circle li {
+  width: 42px;
+  height: 42px;
+  background: #212a3a;
+  border-radius: 21px;
+  text-align: center;
+}
+
