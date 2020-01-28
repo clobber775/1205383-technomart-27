@@ -9,3 +9,14 @@ body{
   text-align: center;
 }
 
+.promo{
+  background: url(../img/slider-image.jpg) no-repeat;
+  width: 620px;
+  height: 266px;
+}
+.truck-test{
+  background: #f4f7f9 url(../img/delivery.png) no-repeat 601px 261px;
+  width: 1200px;
+  height: 522px;
+}
+
