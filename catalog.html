@@ -8,10 +8,15 @@
   <body>
   <header>
     <p><a href="index.html"><img src="img/logo.svg" width="109" height="19" alt="техномарт"></a></p>
-    <p><img src="img/icon-search.svg" width="17" height="17" alt="поиск">Поиск:</p>
-    <!-- Здесь будет форма -->
-    <p><a href=""><img src="img/icon-bookmark.svg" width="14" height="16" alt="закладка">Закладки</a></p>
-    <p><a href=""><img src="img/cart-icon.svg" width="15" height="15" alt="корзина">Корзина</a></p>
+    <form>
+      <p>
+        <img src="img/icon-search.svg" width="17" height="17" alt="лупа">
+        <input type="search" name="search" placeholder="Поиск:" id="search">
+        <label for="search" class="visually-hidden">Поиск</label>
+      </p>
+    </form>
+    <p><a href=""><img src="img/icon-bookmark.svg" width="14" height="16" alt="">Закладки</a></p>
+    <p><a href=""><img src="img/cart-icon.svg" width="15" height="15" alt="">Корзина</a></p>
     <p><a href="">Оформить заказ</a></p>
     <p><a href=""><img src="img/icon-user.svg" width="20" height="18" alt="пользователь">Равшан Джамшутович<img src="img/icon-logout.svg" width="20" height="17" alt="вход"></a></p>
     <p><a href="">Мои заказы</a></p>
@@ -34,7 +39,7 @@
         <li><a href="">Новости</a></li>
         <li><a href="">Спецпредложения</a></li>
         <li><a href="">Доставка</a></li>
-        <li><a href="">Контакты</a></li>
+        <li><a href="contact.html">Контакты</a></li>
       </ul>
     </nav>
 
@@ -54,8 +59,47 @@
 
       <section>
         <h2>Фильтры</h2>
-        <!-- Здесь будет форма -->
-        <button type="button">Показать</button>
+        <form action="https://echo.htmlacademy.ru/" method="get">
+          <fieldset>
+            <legend>Производители:</legend>
+            <ul>
+              <li>
+                <input type="checkbox" id="Bosch" name="Bosch" checked>
+                <label for="Bosch">Bosch</label>
+              </li>
+              <li>
+                <input type="checkbox" id="interskol" name="interskol">
+                <label for="interskol">Интерскол</label>
+              </li>
+              <li>
+                <input type="checkbox" id="Makita" name="Makita" checked>
+                <label for="Makita">Макита</label>
+              </li>
+              <li>
+                <input type="checkbox" id="Dewalt" name="Dewalt">
+                <label for="Dewalt">Dewalt</label>
+              </li>
+              <li>
+                <input type="checkbox" id="hitachi" name="hitachi">
+                <label for="hitachi">Hitachi</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset>
+            <legend>Питание:</legend>
+            <ul>
+              <li>
+                <input type="radio" id="accum" name="power" value="accum" checked>
+                <label for="accum">Аккумуляторные</label>
+              </li>
+              <li>
+                <input type="radio" id="220v" name="power" value="220v">
+                <label for="220v">Сетевые</label>
+              </li>
+            </ul>
+          </fieldset>
+          <button type="submit">Показать</button>
+        </form>
       </section>
 
       <section>
@@ -73,7 +117,7 @@
         <ul>
           <li>
             <a href="catalog-item.html">
-              <img src="img/item.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 3000">
+              <img src="img/item.jpg" width="218" height="170" alt="Перфоратор сине-зеленого цвета">
             </a>
             <h3>
               <a href="catalog-item.html">
@@ -88,7 +132,7 @@
           </li>
           <li>
             <a href="catalog-item.html">
-              <img src="img/item1.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 6000">
+              <img src="img/item1.jpg" width="218" height="170" alt="Перфоратор сине-зеленого цвета">
             </a>
             <h3>
               <a href="catalog-item.html">
@@ -119,7 +163,7 @@
           </li>
           <li>
             <a href="catalog-item.html">
-              <img src="img/item.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 3000">
+              <img src="img/item.jpg" width="218" height="170" alt="Перфоратор сине-зеленого цвета">
             </a>
             <h3>
               <a href="catalog-item.html">
@@ -134,7 +178,7 @@
           </li>
           <li>
             <a href="catalog-item.html">
-              <img src="img/item1.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 6000">
+              <img src="img/item1.jpg" width="218" height="170" alt="Перфоратор сине-зеленого цвета">
             </a>
             <h3>
               <a href="catalog-item.html">
@@ -149,7 +193,7 @@
           </li>
           <li>
             <a href="catalog-item.html">
-              <img src="img/item2.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 2000">
+              <img src="img/item2.jpg" width="218" height="170" alt="Перфоратор сине-зеленого цвета">
             </a>
             <h3>
               <a href="catalog-item.html">
@@ -164,7 +208,7 @@
           </li>
           <li>
             <a href="catalog-item.html">
-              <img src="img/item.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 3000">
+              <img src="img/item.jpg" width="218" height="170" alt="Перфоратор сине-зеленого цвета">
             </a>
             <h3>
               <a href="catalog-item.html">
@@ -179,7 +223,7 @@
           </li>
           <li>
             <a href="catalog-item.html">
-              <img src="img/item1.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 6000">
+              <img src="img/item1.jpg" width="218" height="170" alt="Перфоратор сине-зеленого цвета">
             </a>
             <h3>
               <a href="catalog-item.html">
@@ -194,7 +238,7 @@
           </li>
           <li>
             <a href="catalog-item.html">
-              <img src="img/item2.jpg"  alt="Перфоратор BOSCH BFG 2000">
+              <img src="img/item2.jpg"  alt="Перфоратор сине-зеленого цвета">
             </a>
             <h3>
               <a href="catalog-item.html">
@@ -223,6 +267,13 @@
         ассортиментном ряду есть выбор "трехрежимников":в одном устройстве будут совмещены отбойный молоток и ударная дрель</p>
       </section>
       </main>
+      <!--всплывающее окно-->
+      <img src="img/modal-check.svg" alt="успешно">
+      <h2> Товар добавлен в корзину!</h2>
+      <p><a href="">Оформить заказ</a></p>
+      <p><a href="">Продолжить покупки</a></p>
+      <button id="close" type="button"><img src="img/form-close.svg" width="21px" height="21px" alt="закрыть"></button>
+
       <footer>
         <p><a href="index.html"><img src="img/logo.svg" width="138" height="23" alt="техномарт"></a></p>
         <div>
@@ -231,7 +282,7 @@
             <li><a href="">Новости</a></li>
             <li><a href="">Каталог</a></li>
             <li><a href="">Доставка</a></li>
-            <li><a href="">Контакты</a></li>
+            <li><a href="contact.html">Контакты</a></li>
           </ul>
         </div>
         <p>г.Санкт-Петербург улица Большая Конюшенная д.19/8 <br>
