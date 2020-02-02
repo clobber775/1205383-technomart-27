@@ -58,8 +58,19 @@
       </ul>
 
       <section>
-        <h2>Фильтры</h2>
-        <form action="https://echo.htmlacademy.ru/" method="get">
+        <h2>Фильтр</h2>
+        <form action="https://echo.htmlacademy.ru/" method="get" oninput="priceoutput.value=price.value">
+          <fieldset>
+            <!--Двойной ползунок возможен только с использованием js? По тз этот блок должен быть сверстан формами-->
+            <legend>Цена</legend>
+            <label for="price" class="visually-hidden">Диапазон цен</label>
+            <p>
+            <input type="range" id="price" name="price" min="0" max="40000" step="1" value="30000">
+            </p>
+            <p>
+              <span>0</span>-<span><output name="priceoutput">30000</output></span>
+            </p>
+          </fieldset>
           <fieldset>
             <legend>Производители:</legend>
             <ul>
