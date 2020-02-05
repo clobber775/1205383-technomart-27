@@ -85,10 +85,10 @@
             <legend>Цена</legend>
             <label for="price" class="visually-hidden">Диапазон цен</label>
             <p>
-            <input type="range" id="price" name="price" min="0" max="40000" step="1" value="30000">
+            <input type="range" id="price" name="price" min="0" max="40000" step="1" value="30000" class="price-style">
             </p>
             <p>
-              <span>0</span>-<span><output name="priceoutput">30000</output></span>
+              <span class="price-style">0</span>-<span class="price-style"><output name="priceoutput">30000</output></span>
             </p>
           </fieldset>
           <fieldset>
@@ -133,18 +133,19 @@
         </form>
       </section>
 
+      <div class="sort-main">
+        <h3>Сортировка:</h3>
+        <ul>
+          <li><a>По цене</a></li>
+          <li><a href="">По типу</a></li>
+          <li><a href="">По функционалу</a></li>
+        </ul>
+        <button type="button"><img src="img/icon-up-dir.svg" width="11" height="10" alt="По убыванию"></button>
+        <button type="button"><img src="img/icon-down-dir.svg" width="11" height="10" alt="По возрастанию"></button>
+      </div>
+
       <section class="item-list">
-        <h2>Список перфораторов</h2>
-        <div>
-          <h3>Сортировка:</h3>
-          <ul>
-            <li><a>По цене</a></li>
-            <li><a href="">По типу</a></li>
-            <li><a href="">По функционалу</a></li>
-          </ul>
-          <button type="button"><img src="img/icon-up-dir.svg" width="11" height="10" alt="По убыванию"></button>
-          <button type="button"><img src="img/icon-down-dir.svg" width="11" height="10" alt="По возрастанию"></button>
-        </div>
+        <h2 class="visually-hidden">Список перфораторов</h2>
         <ul>
           <li>
             <a href="catalog-item.html">
@@ -283,15 +284,19 @@
             </p>
           </li>
         </ul>
+      </section>
+
+      <div class="pages">
         <ul>
-          <li><a>1</a></li>
+          <li class="active-page"><a>1</a></li>
           <li><a href="#">2</a></li>
           <li><a href="#">3</a></li>
           <li><a href="#">4</a></li>
+          <li><a href="#">Следующая</a></li>
         </ul>
-      </section>
+      </div>
 
-      <section>
+      <section class="about-tools">
         <h2>Пара слов о перфораторах</h2>
         <p>Перфоратор- универсальный строительный элемент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.<br>
         Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шруповерта и отбойного молотка. в <br>

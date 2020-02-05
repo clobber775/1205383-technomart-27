@@ -1,3 +1,10 @@
+html {
+  box-sizing: border-box;
+}
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -232,12 +239,30 @@ a {
 
 .filters-main{
   color:#000000;
+  font-family: PTSans,Arial,sans-serif;
 }
+
+.filters-main h2,
+.sort-main h3{
+  font-family: PTSans,Arial,sans-serif;
+  background-color: #f7f3ec;
+  font-size: 13px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.price-style,
+.sort-main{
+  background-color: #f7f3ec;
+}
+
 .filters-main legend{
   font-family: PTSans,Arial,sans-serif;
   font-size: 17px;
   font-weight: bold;
   line-height: 30px;
+  text-transform: uppercase;
 }
 
 .manufacturer{
@@ -247,11 +272,43 @@ a {
   list-style: none;
 }
 
+.manufacturer li,
+.power li{
+  font-size: 15px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
 .power{
   font-family: PTSans,Arial,sans-serif;
   font-size: 15px;
   line-height: 20px;
   list-style: none;
+}
+
+.sort-main li{
+  list-style: none;
+}
+
+.sort-main a{
+  font-size: 13px;
+  line-height: 18px;
+  color: rgba(0, 0, 0, 0.3);
+  text-decoration: underline;
+  opacity: 0.3;
+  text-transform: uppercase;
+  font-family: PTSans,Arial,sans-serif;
+}
+
+.sort-main a:hover{
+  color: #000000;
+  opacity: unset;
+}
+
+.sort-main a:focus{
+  color: #ee3643;
+  text-decoration: none;
+  opacity: unset;
 }
 
 .button-show {
@@ -270,6 +327,10 @@ a {
   font-weight: bold;
   line-height: 20px;
   color:#000000;
+}
+
+.item-list li:hover{
+  box-shadow: 0 10px 25px 0 rgba(41, 52, 73, 0.5);
 }
 
 .discount{
@@ -327,19 +388,197 @@ a {
   box-shadow: none;
 }
 
+.pages{
+  font-family: PTSans,Arial,sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.pages a{
+  border:1px solid #bdc6ca;
+}
+
+.pages a:hover{
+  border: solid 1px #bdc6ca;
+}
+
+.pages a:focus{
+  border: solid 1px #ee3643;
+}
 
 
+.pages a{
+  color: #000000;
+}
+
+.about-tools{
+  background-color: #f4f7f9;
+}
+
+.about-tools p{
+  font-size: 13px;
+  line-height: 24px;
+  font-family: PTSans,Arial,sans-serif;
+  color:#000000;
+}
+
+.about-tools h2 {
+  font-size: 30px;
+  line-height: 30px;
+  color:#000000;
+  text-transform: uppercase;
+}
 
 .promo{
   background: url(../img/slider-image.jpg) no-repeat;
   width: 620px;
   height: 266px;
 }
-.truck-test{
+
+.promo h3{
+  font-size: 36px;
+  font-weight: bold;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+
+.promo p{
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.promo a{
+  background-color: #ee3643;
+}
+
+.promo a:hover{
+  background-color: #ca2c37;
+}
+
+.promo a:focus{
+  background-color: #ba2732;
+}
+
+
+.promo-main a{
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.promo-main h3{
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 30px;
+}
+
+.card1 {
+  background-color: #ffbf47;
+}
+
+
+.card2 {
+  background-color: #3bbce3;
+}
+
+.card3 {
+  background-color: #dc91d8;
+}
+
+.card4 {
+  background-color: #8ed78f;
+}
+
+.card5 {
+  background-color: #ffc047;
+}
+
+.popular{
+  background-color: #f9f5f0;
+}
+
+.popular a{
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  background-color: #ee3643;
+  color:#ffffff;
+}
+
+.popular h2{
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color:#000000;
+}
+
+.firms li{
+  border: 1px solid #eaeaea;
+}
+
+.firms li:hover{
+  box-shadow: 0 10px 25px 0 rgba(41, 52, 73, 0.5);
+}
+
+.firms a:focus{
+  box-shadow: 0 4px 10px 0 rgba(41, 52, 73, 0.5);
+  opacity: 0.3
+}
+
+.services{
   background: #f4f7f9 url(../img/delivery.png) no-repeat 601px 261px;
   width: 1200px;
   height: 522px;
 }
+
+.services ul{
+  list-style: none;
+}
+
+.services h3{
+  font-size: 36px;
+  line-height: 36px;
+  color: #000000;
+}
+
+.services h2{
+  font-size: 30px;
+  line-height: 30px;
+  color: #000000;
+}
+
+.services p{
+  font-size: 13px;
+  line-height: 24px;
+  color: #000000;
+}
+
+.slider-services a{
+  font-size: 21px;
+  font-weight: bold;
+  line-height: 30px;
+  color: #ffffff;
+  background-color: #405069;
+}
+
+.slider-services a:hover{
+  color: #000000;
+  background-color: #ffffff;
+  box-shadow: 0 1px 0 0 #ffffff, inset 1px 1px 0 0 #ffffff;
+}
+
+.slider-services a:focus{
+  color: #000000;
+  background-color: #ffffff;
+}
+
+
+
+
+
+
 .visually-hidden{
   position: absolute;
   width: 1px;
