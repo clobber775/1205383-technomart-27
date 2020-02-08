@@ -11,50 +11,61 @@
   <body>
     <header class="main-header">
       <div class="upper-bar">
-        <p class="logo"><a><img src="img/logo.svg" width="109" height="19" alt="техномарт"></a></p>
-        <form>
-          <p>
-            <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17">
-              <path fill="#231F20"
-                    d="M17 15.586l-3.542-3.542A7.465 7.465 0 0 0 15 7.5 7.5 7.5 0 1 0 7.5 15c1.71 0 3.282-.579 4.544-1.542L15.586 17 17 15.586zM2 7.5C2 4.467 4.467 2 7.5 2 10.532 2 13 4.467 13 7.5c0 3.032-2.468 5.5-5.5 5.5A5.506 5.506 0 0 1 2 7.5z"/>
+        <div class="bar-container">
+          <div class="left-bar">
+            <p class="logo"><a><img src="img/logo.svg" width="109" height="19" alt="техномарт"></a></p>
+            <form>
+              <p>
+                <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17">
+                  <path fill="#231F20"
+                        d="M17 15.586l-3.542-3.542A7.465 7.465 0 0 0 15 7.5 7.5 7.5 0 1 0 7.5 15c1.71 0 3.282-.579 4.544-1.542L15.586 17 17 15.586zM2 7.5C2 4.467 4.467 2 7.5 2 10.532 2 13 4.467 13 7.5c0 3.032-2.468 5.5-5.5 5.5A5.506 5.506 0 0 1 2 7.5z"/>
+                </svg>
+                <input type="search" name="search" placeholder="Поиск:" id="search">
+                <label for="search" class="visually-hidden">Поиск</label>
+              </p>
+            </form>
+
+          </div>
+          <div class="right-bar">
+            <p>
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="16" viewBox="0 0 14 16">
+              <path fill="#E72C2D"
+                    d="M14 15c0 .55-.368.741-.818.426l-5.363-3.765c-.45-.315-1.187-.315-1.637 0L.818 15.426C.368 15.741 0 15.55 0 15V1c0-.55.45-1 1-1h12c.55 0 1 .45 1 1v14z"/>
             </svg>
-            <input type="search" name="search" placeholder="Поиск:" id="search">
-            <label for="search" class="visually-hidden">Поиск</label>
-          </p>
-        </form>
-        <p>
-          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="16" viewBox="0 0 14 16">
-            <path fill="#E72C2D"
-                  d="M14 15c0 .55-.368.741-.818.426l-5.363-3.765c-.45-.315-1.187-.315-1.637 0L.818 15.426C.368 15.741 0 15.55 0 15V1c0-.55.45-1 1-1h12c.55 0 1 .45 1 1v14z"/>
-          </svg>
-          <a href="">Закладки</a></p>
-        <p>
-          <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15">
-            <circle cx="4.5" cy="13.5" r="1.5"/>
-            <circle cx="12.5" cy="13.5" r="1.5"/>
-            <path d="M15 2H4.07l-.422-2H0v2h2.031l1.985 9H15V9H9.441L15 6.951z"/>
-          </svg>
-          <a href="">Корзина</a></p>
-        <p class="checkout"><a href="">Оформить заказ</a></p>
+            <a href="">Закладки</a></p>
+            <p>
+              <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15">
+                <circle cx="4.5" cy="13.5" r="1.5"/>
+                <circle cx="12.5" cy="13.5" r="1.5"/>
+                <path d="M15 2H4.07l-.422-2H0v2h2.031l1.985 9H15V9H9.441L15 6.951z"/>
+              </svg>
+              <a href="">Корзина</a></p>
+            <p class="checkout"><a href="">Оформить заказ</a></p>
+          </div>
+        </div>
       </div>
-      <p class="about-site">Интернет-магазин строительных материалов и инструментов для ремонта</p>
-      <ul class="user-navigation">
-          <li>
-            <p><a href=""><img src="img/icon-login.svg" width="20" height="17" alt="вход">Войти</a></p>
-            <p><a href="">Регистрация</a></p>
-          </li>
-      </ul>
+      <div class="header-middle">
+        <p class="about-site">Интернет-магазин<br> строительных материалов<br> и инструментов для ремонта</p>
+        <ul class="user-navigation">
+          <li><p><a href=""><svg xmlns="http://www.w3.org/2000/svg" width="20" height="17" viewBox="0 0 20 17">
+            <path fill="#32425C" d="M14.875 8.5L6 0v6H0v5h6v6z"/>
+            <path fill="#32425C" d="M16.986 15.01h-5.027V17h5.027c2.178 0 3.004-1.81 3.029-3.026V3.028C19.99 1.811 19.164 0 16.986 0h-5.027v1.99h5.027c.839 0 .992.681 1.01 1.057v10.904c-.017.376-.171 1.059-1.01 1.059z"/>
+          </svg>Войти</a></p></li>
+          <li><p><a href="">Регистрация</a></p></li>
+        </ul>
 
-      <section class="contacts-header">
-        <h2 class="visually-hidden">Контакты</h2>
-        <p><a href="tel:+78125550505"><img src="img/icon-phone.png" width="19" height="19" alt="телефон">+7(812) 555-05-05</a></p>
-        <p>
+        <section class="contacts-header">
+          <h2 class="visually-hidden">Контакты</h2>
+          <p><a href="tel:+78125550505"><img src="img/icon-phone.png" width="19" height="19" alt="телефон">+7(812)
+            555-05-05</a></p>
+          <p>
             г.Санкт-Петербург улица Большая Конюшенная д.19/8
-        </p>
-      </section>
+          </p>
+        </section>
+      </div>
 
-      <nav>
-        <ul class="main-navigation">
+      <nav class="main-navigation">
+        <ul>
           <li><a>Главная</a></li>
           <li><a href="">Компания</a></li>
           <li><a href="catalog.html">Каталог</a></li>
@@ -66,42 +77,42 @@
       </nav>
 
     </header>
-    <main>
+    <main class="container">
 
       <h1 class="visually-hidden">Техномарт</h1>
 
       <section class="promo-main">
         <h2 class="visually-hidden">Промо</h2>
-        <ul>
-          <li class="card1">
+        <ul >
+          <li class="card-paint">
             <h3>
               <span>Материалы</span>
             </h3>
             <img src="img/icon-1.svg" width="44" height="65" alt="краска">
             <p><a href="">На любой вкус</a></p>
           </li>
-          <li class="card2">
+          <li class="card-drill">
             <h3>
               <span>Инструмент</span>
             </h3>
             <img src="img/icon-2.svg" width="75" height="61" alt="дрель">
             <p><a href="">На все случаи</a></p>
           </li>
-          <li class="card3">
+          <li class="card-truck">
             <h3>
               <span>Техника</span>
             </h3>
             <img src="img/icon-3.svg" width="78" height="62" alt="трактор">
             <p><a href="">Для стройки</a></p>
           </li>
-          <li class="card4">
+          <li class="card-cart">
             <h3>
               <span>Скидки</span>
             </h3>
             <img src="img/icon-4.svg" width="59" height="72" alt="тележка">
             <p><a href="">На 350 товаров</a></p>
           </li>
-          <li class="card5">
+          <li class="card-car">
             <h3>
               <span>Доставка</span>
             </h3>
@@ -220,7 +231,7 @@
       </section>
 
       <div class="contacts">
-        <section>
+        <section class="contacts-about">
           <h2>Компания "Техномарт"</h2>
           <p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и<br> строительства не
             оставит равнодушными любителей сэкономить на гастарбайтерах.</p>
@@ -235,7 +246,7 @@
           <p><a href="">Подробнее о компании</a></p>
         </section>
 
-        <section>
+        <section class="contacts-map">
           <h2>Контакты</h2>
           <p>Вы можете забрать товар сами,<br>заехав к нам в офис</p>
           <a href="#"><img src="img/map.jpg" width="300" height="158"
@@ -279,38 +290,45 @@
 
     </main>
     <footer class="main-footer">
-      <p class="logo"><a><img src="img/logo.svg" width="138" height="23" alt="техномарт"></a></p>
-      <div>
-        <ul>
-          <li><a href="">Компания</a></li>
-          <li><a href="">Новости</a></li>
-          <li><a href="catalog.html">Каталог</a></li>
-          <li><a href="">Доставка</a></li>
-          <li><a href="">Контакты</a></li>
-        </ul>
-      </div>
-      <p>г.Санкт-Петербург улица Большая Конюшенная д.19/8 <br>
+      <div class="upper-footer">
+        <div class="footer-line-one">
+          <p class="logo"><a><img src="img/logo.svg" width="138" height="23" alt="техномарт"></a></p>
+          <div class="footer-nav">
+            <ul>
+              <li><a href="">Компания</a></li>
+              <li><a href="">Новости</a></li>
+              <li><a href="catalog.html">Каталог</a></li>
+              <li><a href="">Доставка</a></li>
+              <li><a href="">Контакты</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-line-two">
+          <p>г.Санкт-Петербург улица Большая Конюшенная д.19/8 <br>
           +7(812) 555-05-05</p>
-      <div class="offers">
-        <ul>
-          <li><a href="catalog.html">Материалы</a></li>
-          <li><a href="catalog.html">Техника</a></li>
-          <li><a href="catalog.html">Инструмент</a></li>
-          <li><a href="">Спецпредложения</a></li>
-        </ul>
+          <div class="offers">
+            <ul>
+              <li><a href="catalog.html">Материалы</a></li>
+              <li><a href="catalog.html">Техника</a></li>
+              <li><a href="catalog.html">Инструмент</a></li>
+              <li><a href="">Спецпредложения</a></li>
+            </ul>
+          </div>
+        </div>
       </div>
       <div class="lower-bar">
-      <p>©2010-2017 Компания "Техномарт"<br>
-        Все права защищены</p>
-        <ul class="circle">
-          <li><a href="https://vk.com"><img src="img/vk-icon.svg" width="26" height="15" alt="вконтакте"></a></li>
-          <li><a href="https://facebook.com"><img src="img/fb-icon.svg" width="12" height="22" alt="фейсбук"></a></li>
-          <li><a href="https://instagram.com"><img src="img/insta-icon.svg" width="21" height="21" alt="инстаграм"></a></li>
-        </ul>
-        <p>Обратная связь:</p>
-        <p><a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a></p>
-        <p>Разработано -</p>
-        <p><a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a></p>
+        <div class="lower-bar-container">
+          <p>©2010-2017 Компания "Техномарт"<br>
+          Все права защищены</p>
+          <ul class="circle">
+            <li><a href="https://vk.com"><img src="img/vk-icon.svg" width="26" height="15" alt="вконтакте"></a></li>
+            <li><a href="https://facebook.com"><img src="img/fb-icon.svg" width="12" height="22" alt="фейсбук"></a></li>
+            <li><a href="https://instagram.com"><img src="img/insta-icon.svg" width="21" height="21"
+                                                     alt="инстаграм"></a></li>
+          </ul>
+          <p>Обратная связь:<a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a></p>
+          <p>Разработано -<a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a></p>
+        </div>
       </div>
     </footer>
   </body>
