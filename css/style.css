@@ -37,6 +37,7 @@ a {
   line-height: 17px;
   background-color: #32425c;
   width: 940px;
+  margin-bottom: 60px;
 
 }
 
@@ -93,10 +94,12 @@ a {
 
 .user-navigation{
   order: 2;
+  align-items: baseline;
 }
 
 .user-navigation li{
   background-color: #ffffff;
+  align-items: baseline;
 }
 
 .upper-bar input{
@@ -503,11 +506,14 @@ a {
 
 }
 
-.item-list ul{
+.item-list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
   padding-left: 0;
+}
+
+.forth-item{
+  margin-left: 22px;
 }
 
 .item-list li{
@@ -515,6 +521,11 @@ a {
   width: 218px;
   list-style: none;
   text-align: center;
+}
+
+.item-list li:nth-child(3n-1){
+  margin-left: 22px;
+  margin-right: 22px;
 }
 
 .item-list a{
@@ -620,6 +631,7 @@ a {
 
 .about-tools{
   background-color: #f4f7f9;
+  width: 100%;
 }
 
 .about-tools p{
@@ -666,6 +678,31 @@ a {
   background-color: #ba2732;
 }
 
+.promo-main ul{
+  display: flex;
+  padding-left: 0;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.promo-main li{
+  margin-bottom: 20px;
+}
+
+.promo-row{
+  display: flex;
+  flex-direction: column;
+}
+
+.card-paint,
+.card-drill,
+.card-truck,
+.card-cart,
+.card-car{
+  width: 300px;
+  height: 123px;
+}
+
 
 .promo-main a{
   font-size: 14px;
@@ -703,11 +740,17 @@ a {
 
 .popular{
   background-color: #f9f5f0;
+  display: flex;
+  padding-left: 20px;
+  align-items: baseline;
+  padding-right: 18px;
+  justify-content: space-between;
 }
 
 .popular a{
   font-size: 14px;
   line-height: 18px;
+  font-family: Cuprum,Arial,sans-serif;
   text-transform: uppercase;
   background-color: #ee3643;
   color:#ffffff;
@@ -720,8 +763,21 @@ a {
   color:#000000;
 }
 
+.firms{
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 0;
+  list-style: none;
+  width: 940px;
+  justify-content: space-between;
+  margin-bottom: 85px;
+}
+
 .firms li{
   border: 1px solid #eaeaea;
+  width: 220px;
+  margin-bottom: 20px;
+  text-align: center;
 }
 
 .firms li:hover{
@@ -734,32 +790,46 @@ a {
 }
 
 .services{
-  background: #f4f7f9 url(../img/delivery.png) no-repeat 601px 261px;
-  width: 1200px;
+  background: #f4f7f9 url(../img/delivery.png) no-repeat 471px 261px;
+  width: 100%;
   height: 522px;;
 
 }
 
 .services ul{
   list-style: none;
+  padding-left: 0;
+  width: 240px;
 }
+
+.services li{
+  width: 240px;
+}
+
 
 .services h3{
   font-size: 36px;
   line-height: 36px;
   color: #000000;
+  text-transform: uppercase;
 }
 
 .services h2{
   font-size: 30px;
   line-height: 30px;
   color: #000000;
+  text-transform: uppercase;
+  padding-top: 68px;
 }
 
 .services p{
   font-size: 13px;
   line-height: 24px;
   color: #000000;
+}
+
+.services-flex{
+  display: flex;
 }
 
 .slider-services a{

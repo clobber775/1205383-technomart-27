@@ -47,17 +47,17 @@
       <div class="header-middle">
         <p class="about-site">Интернет-магазин<br> строительных материалов<br> и инструментов для ремонта</p>
         <ul class="user-navigation">
-          <li><p><a href=""><svg xmlns="http://www.w3.org/2000/svg" width="20" height="17" viewBox="0 0 20 17">
+          <li><a href=""><svg xmlns="http://www.w3.org/2000/svg" width="20" height="17" viewBox="0 0 20 17">
             <path fill="#32425C" d="M14.875 8.5L6 0v6H0v5h6v6z"/>
             <path fill="#32425C" d="M16.986 15.01h-5.027V17h5.027c2.178 0 3.004-1.81 3.029-3.026V3.028C19.99 1.811 19.164 0 16.986 0h-5.027v1.99h5.027c.839 0 .992.681 1.01 1.057v10.904c-.017.376-.171 1.059-1.01 1.059z"/>
-          </svg>Войти</a></p></li>
-          <li><p><a href="">Регистрация</a></p></li>
+          </svg>Войти</a></li>
+          <li><a href="">Регистрация</a></li>
         </ul>
 
         <section class="contacts-header">
           <h2 class="visually-hidden">Контакты</h2>
-          <p><a href="tel:+78125550505"><img src="img/icon-phone.png" width="19" height="19" alt="телефон">+7(812)
-            555-05-05</a></p>
+          <a href="tel:+78125550505"><img src="img/icon-phone.png" width="19" height="19" alt="телефон">+7(812)
+            555-05-05</a>
           <p>
             г.Санкт-Петербург улица Большая Конюшенная д.19/8
           </p>
@@ -105,26 +105,28 @@
             <img src="img/icon-3.svg" width="78" height="62" alt="трактор">
             <p><a href="">Для стройки</a></p>
           </li>
-          <li class="card-cart">
-            <h3>
-              <span>Скидки</span>
-            </h3>
-            <img src="img/icon-4.svg" width="59" height="72" alt="тележка">
-            <p><a href="">На 350 товаров</a></p>
-          </li>
-          <li class="card-car">
-            <h3>
-              <span>Доставка</span>
-            </h3>
-            <img src="img/icon-5.svg" width="78" height="63" alt="машина">
-            <p><a href="">Бесплатно</a></p>
-          </li>
           <li class="promo">
             <h3>Дрели</h3>
             <p>Соседям на радость!</p>
             <!--slider-->
             <p><a href="catalog.html">Открыть каталог</a></p>
           </li>
+          <div class="promo-row">
+            <li class="card-cart">
+              <h3>
+                <span>Скидки</span>
+              </h3>
+              <img src="img/icon-4.svg" width="59" height="72" alt="тележка">
+              <p><a href="">На 350 товаров</a></p>
+            </li>
+            <li class="card-car">
+              <h3>
+                <span>Доставка</span>
+              </h3>
+              <img src="img/icon-5.svg" width="78" height="63" alt="машина">
+              <p><a href="">Бесплатно</a></p>
+            </li>
+          </div>
         </ul>
 
       </section>
@@ -180,7 +182,7 @@
               <span class="price">25500</span>
             </p>
           </li>
-          <li>
+          <li class="forth-item">
             <a href="catalog-item.html">
               <img src="img/item2.jpg" width="218" height="170" alt="Перфоратор сине-зеленого цвета">
             </a>
@@ -217,17 +219,22 @@
 
       <section class="services">
         <h2>Сервисы</h2>
-        <ul class="slider-services">
-          <li><a href="">Доставка</a>a></li>
-          <li><a href="">Гарантия</a></li>
-          <li><a href="">Кредит</a></li>
-        </ul>
-        <h3>Доставка</h3>
-        <p>Мы с удовольствием доставим ваш товар прямо <br>
-        к вашему подъезду совершенно бесплатно!<br>
-        Ведь мы неплохо заработаем,<br>
-        поднимая его на ваш этаж!</p>
-
+        <p>Хороший интернет-магазин отличается от плохого не только ценами!<br>
+          Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
+        <div class="services-flex">
+          <ul class="slider-services">
+            <li><a href="">Доставка</a>a></li>
+            <li><a href="">Гарантия</a></li>
+            <li><a href="">Кредит</a></li>
+          </ul>
+          <div class="delivery">
+            <h3>Доставка</h3>
+            <p>Мы с удовольствием доставим ваш товар прямо <br>
+              к вашему подъезду совершенно бесплатно!<br>
+              Ведь мы неплохо заработаем,<br>
+              поднимая его на ваш этаж!</p>
+          </div>
+        </div>
       </section>
 
       <div class="contacts">
