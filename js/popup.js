@@ -25,7 +25,7 @@ link.addEventListener("click", function (evt) {
 });
 
 close.addEventListener("click", function (evt) {
-  evt.preventDefault();
+    evt.preventDefault();
   popup.classList.remove("reply-show");
   popup.classList.remove("reply-error");
 });
