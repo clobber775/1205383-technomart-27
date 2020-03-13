@@ -552,6 +552,10 @@ input:focus+button svg{
   margin-bottom: 36px;
 }
 
+.contacts-map p{
+  width: 217px;
+}
+
 .contacts-map img {
   margin-bottom: 40px;
 }
@@ -1446,13 +1450,15 @@ input:focus+button svg{
 }
 
 .drill {
-  background: darkgrey url(../img/slider-image.jpg) no-repeat;
+  background: url(../img/slider-image.jpg) no-repeat;
   position: absolute;
+  background-color: darkgrey;
 }
 
 .hammer-drill {
-  background: darkgrey url(../img/slide-image.jpg) no-repeat;
+  background:  url(../img/slide-image.jpg) no-repeat;
   position: absolute;
+  background-color: darkgrey;
 }
 
 .slide-active {
@@ -1751,11 +1757,15 @@ input:focus+button svg{
   padding-bottom: 73px;
 }
 
+.services-container p{
+  width: 358px;
+}
 
 .slider-services {
   padding-left: 0;
   margin-right: 80px;
   position: absolute;
+  list-style: none;
 }
 
 .slider-services:after {
@@ -1774,8 +1784,9 @@ input:focus+button svg{
 }
 
 .warranty-link,
-.credit-link {
-  box-shadow: 0 1px 0 0, inset 0 1px 0 0 #405069;
+.credit-link,
+.delivery-link{
+  box-shadow: 0 -1px 1px 0 #293449,inset 0 1px 0 0 #405069;
 }
 
 .warranty {
